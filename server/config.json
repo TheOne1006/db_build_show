@@ -1,0 +1,15 @@
+{
+  "db" : {
+    "host"     : "serverIp",
+    "port"     : "3306",
+    "user"     : "user",
+    "password" : "passwrd",
+    "database" : "dbname"
+  },
+  "path" : {
+    "table" : "data/table_info/",
+    "sql"   : "data/sql/",
+    "md"    : "data/md/",
+    "all_tables" : "data/all_tables.json"
+  }
+}
