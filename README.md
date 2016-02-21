@@ -1,5 +1,10 @@
 # database dictionary build 快速创建数据库字典
 
+### Demo
+
+[Demo](http://db.theone.io)
+
+
 ### What Can I do ?
 
 1. 我们只需要一款浏览器 (没错!我说的是 __浏览器__ 不是ie! ^.^ )
@@ -23,21 +28,26 @@
 ```
 database_dictionary_build/
 ├── dist/
-|   ├── css/
-│   |   ├── main.js
-|   |   └── main.min.js
-|   ├── js/
-|   |   ├── vendors/
-│   |   ├── flat-ui.js
-│   |   └── flat-ui.min.js
+|   ├── images/
+|   ├── scripts/
+|   ├── server/
+|   ├── styles/
+|   ├── views/
 |   ├── fonts/
 |   |   ├── lato/
 |   |   └── glyphicons/
-|   ├── img/
+|   ├── database_dictionary_build.zip
+|   ├── README.MD
 |   └── index.html
 ├── app/
 |   ├── images/
 |   ├── scripts/
+|   |   ├── controllers/
+|   |   ├── directives/
+|   |   ├── filters/
+|   |   ├── services/
+|   |   ├── router.js
+|   |   └── app.js
 |   ├── styles/
 |   ├── views/
 |   ├── index.html
@@ -47,7 +57,12 @@ database_dictionary_build/
 |   ├── js-build-mysql-db-dictionary.js
 |   └── php-build-mysql-db-dictionary.php
 └── test/
-
+    ├── spec/
+    |   ├─ controllers/
+    |   ├─ filters/
+    |   └─ services/
+    ├── .jshintrc
+    └── karma.conf.js
 ```
 
 #### 初衷
@@ -79,3 +94,4 @@ Anyway 最终我的方案是 php/node == build ==> `.json` 文件,再有 ng 加�
 1. 配置 `server/config.json` 数据库信息
 2. 执行 `node`/`php` 脚本  
 3. 访问 `相应目录`
+4. 支持模糊搜索

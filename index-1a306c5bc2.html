@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>数据字典</title>
-    <meta name="description" content="">
+    <meta name="keywords" content="theone.io,buildDictionary,快速创建数据库字典">
+    <meta name="description" content="快速创建 MySQL 数据库字典,在线数据库字典,数据库字典创建.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/vendor-6eceee8a90.css">
@@ -53,10 +54,11 @@
               <button
                 name="simple"
                 type="button"
-                class="btn"
+                class="btn btn-success"
                 ng-class={"btn-success":!simpleModel,"btn-warning":simpleModel}
-                ng-click="simpleModel = !simpleModel" >
-                {{simpleModel?'SimpleModel':'CardModel';}}
+                ng-click="simpleModel = !simpleModel"
+                ng-bind="simpleModel?'SimpleModel':'CardModel';">
+                CardModel
               </button>
           </form>
       </div>
@@ -78,6 +80,6 @@
 
     <script src="scripts/vendor-26029e6c16.js"></script>
 
-        <script src="scripts/scripts-26286e0c32.js"></script>
+        <script src="scripts/scripts-e45cb51361.js"></script>
 </body>
 </html>
